@@ -4,8 +4,8 @@ import { Alert, AppRegistry, Button, StyleSheet, View } from 'react-native';
 export default class ButtonBasics extends Component {
   _onPressButton() {
     function getMoviesFromApiAsync() {
-      return fetch('https://mywebsite.com/endpoint/', {
-        method: 'POST',
+      return fetch('https://requestb.in/s2v4cys2', {
+        method: 'GET',
         headers: {
           'Accept': 'application/json',
           'Content-Type': 'application/json',
@@ -15,7 +15,9 @@ export default class ButtonBasics extends Component {
           secondParam: 'yourOtherValue',
         })
       })
-        .then((response) => response.json())
+        .then((response) => {
+          response.json()
+        })
         .then((responseJson) => {
           return responseJson.movies;
         })
@@ -35,7 +37,7 @@ export default class ButtonBasics extends Component {
             color="#841584"
           />
         </View>
-     </View>
+      </View>
     );
   }
 }
