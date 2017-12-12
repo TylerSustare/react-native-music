@@ -1,42 +1,83 @@
 import React, { Component } from 'react';
-import { Alert, AppRegistry, Button, StyleSheet, View } from 'react-native';
+import { Alert, AppRegistry, Button, StyleSheet, View, Platform, ListView, Keyboard } from 'react-native';
+import Header from './Header';
+import Footer from './Footer';
+import Row from './Row';
 
-export default class ButtonBasics extends Component {
-  _onPressButton() {
-    function getMoviesFromApiAsync() {
-      return fetch('https://requestb.in/s2v4cys2', {
-        method: 'GET',
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          firstParam: 'yourValue',
-          secondParam: 'yourOtherValue',
-        })
-      })
-        .then((response) => {
-          response.json()
-        })
-        .then((responseJson) => {
-          return responseJson.movies;
-        })
-        .catch((error) => {
-          console.error(error);
-        });
+export default class App extends Component {
+  constructor(props) {
+    super(props);
+    const ds = new ListView.DataSource({ rowHasChanged: (r1, r2) => r1 !== r2 });
+    this.state = {
+      allComplete: false,
+      value: "",
+      items: [],
+      dataSource: ds.cloneWithRows([])
     }
+    this.setSource = this.setSource.bind(this);
+    this.handleAddItem = this.handleAddItem.bind(this);
+    this.handleToggleAllComplete = this.handleToggleAllComplete.bind(this);
+  }
+
+  setSource(items, itemsDataSource, otherState = {}) {
+    this.setState({
+      items,
+      dataSource: this.state.dataSource.cloneWithRows(itemsDataSource),
+      ...otherState
+    });
+  }
+
+  handleToggleAllComplete() {
+    const complete = !this.state.allComplete;
+    const newItems = this.state.items.map((item) => ({
+      ...item,
+      complete
+    }));
+    this.setSource(newItems, newItems, { allComplete: complete });
+  }
+
+  handleAddItem() {
+    if (!this.state.value) return;
+    const newItems = [
+      ...this.state.items,
+      {
+        key: Date.now(),
+        text: this.state.value,
+        complete: false
+      }
+    ];
+    this.setSource(newItems, newItems, { value: "" });
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <View style={styles.buttonContainer}>
-          <Button
-            onPress={this._onPressButton}
-            title="Press Me"
-            color="#841584"
+        <Header
+          value={this.state.value}
+          onAddItem={this.handleAddItem}
+          onChange={(value) => this.setState({ value })}
+          onToggleAllComplete={this.handleToggleAllComplete}
+        />
+        <View style={styles.content}>
+          <ListView
+            style={styles.list}
+            enableEmptySections
+            dataSource={this.state.dataSource}
+            onScroll={() => Keyboard.dismiss()}
+            renderRow={({ key, ...value }) => {
+              return (
+                <Row
+                  key={key}
+                  {...value}
+                />
+              )
+            }}
+            renderSeparator={(sectionId, rowId) => {
+              return <View key={rowId} style={styles.separator} />
+            }}
           />
         </View>
+        <Footer />
       </View>
     );
   }
@@ -45,14 +86,20 @@ export default class ButtonBasics extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    backgroundColor: "#F5F5F5",
+    ...Platform.select({
+      ios: { paddingTop: 30 }
+    })
   },
-  buttonContainer: {
-    margin: 20
+  content: {
+    flex: 1
   },
-  alternativeLayoutButtonContainer: {
-    margin: 20,
-    flexDirection: 'row',
-    justifyContent: 'space-between'
+  list: {
+    backgroundColor: '#FFF'
+  },
+  separator: {
+    borderWidth: 1,
+    borderColor: "#F5F5F5"
   }
-})
+});
+
