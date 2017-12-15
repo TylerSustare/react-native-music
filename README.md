@@ -1,1 +1,1 @@
-# react mobile application
+# react native mobile application
