@@ -1,1 +1,1 @@
-# com.pureowned.mobile
+# react mobile application
