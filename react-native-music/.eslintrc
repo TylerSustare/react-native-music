@@ -32,6 +32,7 @@
             "error",
             "always"
         ],
-        "prefer-const":"error"
+        "prefer-const":"error",
+        "no-unused-vars":"off"
      }
 }
