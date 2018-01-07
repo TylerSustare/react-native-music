@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, Image} from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
+import Button from './Button';
 
 class AlbumDetail extends Component {
     constructor(props) {
@@ -42,6 +43,9 @@ class AlbumDetail extends Component {
                         style={albumImageStyle}
                         source={{uri: image}}
                     />
+                </CardSection>
+                <CardSection>
+                    <Button/>
                 </CardSection>
             </Card>
         );
