@@ -1,17 +1,18 @@
 import React from 'react';
 import { Text, TouchableOpacity } from 'react-native';
 
-const Button = () => {
+const Button = (props) => {
     const { buttonStyle, textStyle } = styles;
+    const {onPress} = props;
     return (
-        <TouchableOpacity style={buttonStyle}>
+        <TouchableOpacity onPress={onPress} style={buttonStyle}>
             <Text style={textStyle}>Click Me</Text>
         </TouchableOpacity>
     );
 };
 
 const styles = {
-    textStyle:{
+    textStyle: {
         alignSelf: 'center',
         color: '#007aff',
         fontSize: 16,
