@@ -16,7 +16,7 @@ const styles = {
     viewStyle: {
         backgroundColor: '#E8E8E8',
         height: 60,
-        paddingTop: 15,
+        paddingTop: 20,
         justifyContent: 'center',
         alignItems: 'center',
         shadowColor: '#000',

@@ -13,7 +13,7 @@ class AnimalDetail extends Component {
     getSound(animal, sound) {
         switch (animal) {
         case 'Bear':
-            return require('../sounds/bear.mp3');
+            return require('../sounds/bear.mp3'); // required must be a string literal for webpack
         default:
             return { uri: sound };
         }
