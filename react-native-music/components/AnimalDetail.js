@@ -4,15 +4,13 @@ import Card from './Card';
 import CardSection from './CardSection';
 import Expo from 'expo';
 
-class AlbumDetail extends Component {
+class AnimalDetail extends Component {
     constructor(props) {
         super(props);
         this.state = {};
     }
 
     getSound(animal, sound) {
-        console.log(animal);
-        console.log(sound);
         switch (animal) {
         case 'Bear':
             return require('../sounds/bear.mp3');
@@ -26,12 +24,10 @@ class AlbumDetail extends Component {
         const source = this.getSound(title, sound);
         soundObject.loadAsync(source)
             .then(() => {
-                console.log(source);
                 soundObject.playAsync();
             })
             .catch(e => {
                 // disappoint a child and frustrate a parent with no sound.
-                console.log(e);
             });
     }
 
@@ -40,8 +36,8 @@ class AlbumDetail extends Component {
     }
 
     render() {
-        const { title, image, sound } = this.props.album;
-        const { startingLetterContainerStyle, startingLetterStyle, headerContentStyle, headerTextStyle, albumImageStyle, albumImageWrapperStyle } = styles;
+        const { title, image, sound } = this.props.animal;
+        const { startingLetterContainerStyle, startingLetterStyle, headerContentStyle, headerTextStyle, animalImageStyle, animalImageWrapperStyle } = styles;
         return (
             <Card>
                 <CardSection>
@@ -56,10 +52,10 @@ class AlbumDetail extends Component {
                 </CardSection>
                 <CardSection>
                     <TouchableOpacity
-                        style={albumImageWrapperStyle}
+                        style={animalImageWrapperStyle}
                         onPress={() => this.playSound(title, sound)}>
                         <Image
-                            style={albumImageStyle}
+                            style={animalImageStyle}
                             source={{ uri: image }}
                         />
                     </TouchableOpacity>
@@ -91,16 +87,16 @@ const styles = {
     startingLetterStyle: {
         fontSize: 40
     },
-    albumImageWrapperStyle: {
+    animalImageWrapperStyle: {
         justifyContent: 'center',
         alignItems:
             'center',
     },
-    albumImageStyle: {
+    animalImageStyle: {
         height: 350,
         // flex: 1, width: null // to make sure the image always takes up the full width => only with no TouchableOpacity/TouchableHighlight
         width: Dimensions.get('window').width - 22,
     }
 };
 
-export default AlbumDetail;
+export default AnimalDetail;

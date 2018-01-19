@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Header from './components/Header';
-import AlbumList from './components/AlbumList';
+import {Header} from './components/Header';
+import AnimalList from './components/AnimalList';
 
 export default class App extends React.Component {
     render() {
@@ -10,7 +10,7 @@ export default class App extends React.Component {
             // view style of 1 for scrolling all the way to the bottom
             <View style={{flex:1}}>
                 <Header headerText={'Animals'} />
-                <AlbumList />
+                <AnimalList />
             </View>
         );
     }

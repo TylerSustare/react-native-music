@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-const Header = (props) => {
-    return (
-        <View style={styles.viewStyle}>
-            <Text style={styles.textStyle}>{props.headerText}</Text>
-        </View>
-    );
-};
+export class Header extends Component {
+    render() {
+        return (
+            <View style={styles.viewStyle}>
+                <Text style={styles.textStyle}>{this.props.headerText}</Text>
+            </View>
+        );
+    }
+}
+
 
 const styles = {
     viewStyle: {
@@ -27,7 +30,6 @@ const styles = {
     }
 };
 
-export default Header;
 
 // the following are equivalent 
 /*
@@ -41,6 +43,10 @@ class Header extends Component {
         );
     }
 }
+// export default Header; 
+// export default means you don't have to deconstruct the import statement
+//      import Header from '' // export default
+//      import {Header} from '' // just export
 
 
 // functional component
@@ -51,5 +57,5 @@ const Header = (props) => {
         </View>
     );
 };
-
+export default Header;
 */
