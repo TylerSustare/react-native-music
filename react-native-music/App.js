@@ -9,7 +9,7 @@ export default class App extends React.Component {
             // have to return a single top level tag
             // view style of 1 for scrolling all the way to the bottom
             <View style={{flex:1}}>
-                <Header headerText={'Albums'} />
+                <Header headerText={'Animals'} />
                 <AlbumList />
             </View>
         );
