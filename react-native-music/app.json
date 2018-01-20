@@ -2,9 +2,12 @@
   "expo": {
     "sdkVersion": "23.0.0",
     "orientation": "portrait",
-    "icon": "./Sound.svg",
+    "icon": "./Sound.png",
     "primaryColor": "#ffffff",
     "name": "Zoo Noises",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "ios": {
+      "bundleIdentifier": "com.tylersustare.zoo-noises"
+    }
   }
 }
