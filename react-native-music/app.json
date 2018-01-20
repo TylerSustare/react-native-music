@@ -1,6 +1,10 @@
 {
   "expo": {
     "sdkVersion": "23.0.0",
-    "orientation": "portrait"
+    "orientation": "portrait",
+    "icon": "./Sound.svg",
+    "primaryColor": "#ffffff",
+    "name": "Zoo Noises",
+    "version": "1.0.0"
   }
 }
