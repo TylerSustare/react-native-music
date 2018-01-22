@@ -26,7 +26,7 @@ class AnimalList extends Component {
     renderAnimals() {
         try { // but first time you shall fail
             return this.state.animals.map(animal => {
-                // key should be unique!! 
+                // key should be unique!!
                 return <AnimalDetail key={animal.title} animal={animal} />;
             });
         } catch (err) {

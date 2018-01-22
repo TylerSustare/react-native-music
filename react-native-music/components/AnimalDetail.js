@@ -11,9 +11,60 @@ class AnimalDetail extends Component {
     }
 
     getSound(animal, sound) {
+        // required must be a string literal for webpack ... so this is gross
         switch (animal) {
+        case 'Anteater':
+            return require('../sounds/anteater.mp3');
         case 'Bear':
-            return require('../sounds/bear.mp3'); // required must be a string literal for webpack
+            return require('../sounds/bear.mp3');
+        case 'Beluga':
+            return require('../sounds/beluga.mp3');
+        case 'Camel':
+            return require('../sounds/camel.mp3');
+        case 'Cat':
+            return require('../sounds/cat.mp3');
+        case 'Cougar':
+            return require('../sounds/cougar.mp3');
+        case 'Dog':
+            return require('../sounds/dog.mp3');
+        case 'Dolphin':
+            return require('../sounds/dolphin.mp3');
+        case 'Eagle':
+            return require('../sounds/eagle.mp3');
+        case 'Elephant':
+            return require('../sounds/elephant.mp3');
+        case 'Falcon':
+            return require('../sounds/falcon.mp3');
+        case 'Frog':
+            return require('../sounds/frog.mp3');
+        case 'Gorilla':
+            return require('../sounds/gorilla.mp3');
+        case 'Hippo':
+            return require('../sounds/hippo.mp3');
+        case 'Horse':
+            return require('../sounds/horse.mp3');
+        case 'Jaguar':
+            return require('../sounds/jaguar.mp3');
+        case 'Lamb':
+            return require('../sounds/lamb.mp3');
+        case 'Leopard':
+            return require('../sounds/leopard.mp3');
+        case 'Lion':
+            return require('../sounds/lion.mp3');
+        case 'Orca':
+            return require('../sounds/orca.mp3');
+        case 'Penguin':
+            return require('../sounds/penguin.mp3');
+        case 'Pig':
+            return require('../sounds/pig.mp3');
+        case 'Raccoon':
+            return require('../sounds/raccoon.mp3');
+        case 'Sea Lion':
+            return require('../sounds/sea-lion.mp3');
+        case 'Seal':
+            return require('../sounds/seal.mp3');
+        case 'Wolf':
+            return require('../sounds/wolf.mp3');
         default:
             return { uri: sound };
         }

@@ -1,92 +1,112 @@
 [
     {
         "title": "Bear",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/grizzly_bear_0.jpg",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/bear.jpeg",
         "sound": "../sounds/bear.mp3"
     },
     {
         "title": "Camel",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/camel_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/Camel.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/camel.jpeg",
+        "sound": ""
     },
     {
-        "title": "Cheetah",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cheetah_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cheeta.mp3"
+        "title": "Cat",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cat.jpeg",
+        "sound": ""
     },
     {
         "title": "Cougar",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cougar_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cougar.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/cougar.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Dog",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/dog.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Dolphin",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/dolphin.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Eagle",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/eagle.jpeg",
+        "sound": ""
     },
     {
         "title": "Elephant",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/elephant_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/elephant9.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/elephant.jpeg",
+        "sound": ""
     },
     {
-        "title": "Giraffe",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/giraffe_0.jpg",
-        "sound": "XX"
+        "title": "Falcon",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/falcon.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Frog",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/frog.jpeg",
+        "sound": ""
     },
     {
         "title": "Gorilla",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/gorilla_0.jpg",
-        "sound": "XX"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/gorilla.jpeg",
+        "sound": ""
     },
     {
         "title": "Hippo",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/hippo_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/hippo3.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/hippo.jpeg",
+        "sound": ""
     },
     {
-        "title": "Koala",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/koala_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/koala.mp3"
+        "title": "Jaguar",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/jaguar.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Lamb",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/lamb.jpeg",
+        "sound": ""
     },
     {
         "title": "Leopard",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/leopard_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/leopard7.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/leopard.jpeg",
+        "sound": ""
     },
     {
         "title": "Lion",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/lion_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/lioncub2.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/lion.jpeg",
+        "sound": ""
     },
     {
-        "title": "Monkey",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/monkey_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/baboon_monkey.mp3"
-    },
-    {
-        "title": "Otter",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/otter_0.jpg",
-        "sound": "XX"
-    },
-    {
-        "title": "Panda",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/panda_0.jpg",
-        "sound": "XX"
+        "title": "Orca",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/orca.jpg",
+        "sound": ""
     },
     {
         "title": "Penguin",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/penguin_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/penguin3.mp3"
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/penguin.jpeg",
+        "sound": ""
     },
     {
-        "title": "Snake",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/snake_0.jpg",
-        "sound": "XX"
+        "title": "Raccoon",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/raccoon.jpeg",
+        "sound": ""
     },
     {
-        "title": "Tiger",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/tiger_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/Tiger7.mp3"
+        "title": "Sea Lion",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/sea-lion.jpeg",
+        "sound": ""
     },
     {
-        "title": "Zebra",
-        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/zebra_0.jpg",
-        "sound": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/zebra7.mp3"
+        "title": "Seal",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/seal.jpeg",
+        "sound": ""
+    },
+    {
+        "title": "Wolf",
+        "image": "https://s3-us-west-2.amazonaws.com/sustare2017-animals/wolf.jpeg",
+        "sound": ""
     }
 ]
